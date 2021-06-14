@@ -1,1 +1,141 @@
 /* css for Google Homepage */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #222;
+  text-align: center;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  padding: 5px 5px 5px 5px;
+  margin: 5px 5px 5px 5px;
+  text-decoration: none;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+#top {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 6px;
+  height: 60px;
+  list-style-type: none;
+}
+
+#gmail{
+  flex-grow: 4;
+}
+
+#gmail a{
+  text-align: end;
+  font-size: 13px;
+}
+
+#images a{
+  font-size: 13px;
+}
+
+#apps {
+  height: 40px;
+  width: 40px;
+}
+
+#apps-menu a{
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 1px;
+  grid-row-gap: 1px;
+  height : 17px;
+  width : 17px;
+}
+
+.bento-dot {
+  width : 4px;
+  height: 4px;
+  border-radius: 999px;
+  background:#5f6368;
+  overflow: hidden;
+}
+
+ #work:hover {
+  background-color: #aaaaaa34;
+  border-radius: 999px;
+  height: 37px;
+  width: 37px;
+  
+}
+
+#shadow {
+  margin-top: 2px;
+  padding-top: 10px;
+}
+
+#github-logo {
+  height: 50px;
+  width: 50px;
+  align-self: flex-start;
+  margin-top: -17px;
+}
+
+
+/*
+#about #store {
+  position: fixed;
+}
+
+
+#top {
+  display: flex;
+  list-style-type: none;
+  margin: 0px;
+  padding-left: 0px;
+  height: 60px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#about{
+  align-self:center;
+  padding-bottom: 12px;
+  margin-left: -95px;
+}
+#store{
+  align-self: center;
+  margin-left: -205px;
+  padding-bottom: 12px;
+}
+
+#top li:nth-of-type(1), #top li:nth-of-type(2) {
+  flex-basis: 5%;
+}
+#top li:nth-of-type(3) {
+  flex-basis: 50%;
+}
+#top li:nth-of-type(4), #top li:nth-of-type(5), #top li:nth-of-type(6), #top li:nth-of-type(7) {
+  flex-basis: 10%;
+}body, footer {
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+a:hover, a:active {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+  color:#222;
+}

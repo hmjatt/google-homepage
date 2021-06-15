@@ -1,5 +1,20 @@
 /* css for Google Homepage */
+html, body {
+  height: 98.5%;
+}
 
+body {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0px;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+footer {
+  flex-shrink: 0;
+}
 ul {
   list-style-type: none;
   margin: 0;
@@ -26,6 +41,39 @@ li a:hover {
   text-decoration: underline;
 }
 
+@media only screen and (max-width: 600px) {
+  html, body{
+    height: 100vh;
+  }
+
+  #foo {
+    height: 100px;
+    margin-left: -3px;
+    margin-right: -3px;
+  }
+  
+  #bottom #foot {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100px;
+    margin-left: -3px;
+    margin-right: -3px;
+  }
+
+  #f3 {
+    display: flex;
+    justify-content: space-evenly;
+    
+  }
+
+  #l3 {
+    display: flex;
+    justify-content: space-evenly;
+    
+  }
+
+} 
+
 /*------TOP NAVIGATION START----- */
 
 #top {
@@ -36,16 +84,16 @@ li a:hover {
   list-style-type: none;
 }
 
-#gmail{
+#gmail {
   flex-grow: 4;
 }
 
-#gmail a{
+#gmail a {
   text-align: end;
   font-size: 13px;
 }
 
-#images a{
+#images a {
   font-size: 13px;
 }
 
@@ -54,7 +102,7 @@ li a:hover {
   width: 40px;
 }
 
-#apps-menu a{
+#apps-menu a {
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -90,8 +138,8 @@ li a:hover {
   height: 37px;
   width: 37px;
   border-radius: 999px;
-  margin-left: -6px;
-  margin-top: -1px;
+  margin-left: -7px;
+  margin-top: -2px;
 }
 #sign {
   margin-top: -7px;
@@ -99,11 +147,11 @@ li a:hover {
   width: 45px;
 }
 
-#git{
+#git {
   height: 45px;
   width: 45px;
 }
-#git:hover{
+#git:hover {
   background-color: #aaaaaa34;
   border-radius: 999px;
   height: 43px;
@@ -114,10 +162,55 @@ li a:hover {
 
 
 /*------BOTTOM NAVIGATION START----- */
+footer {
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-bottom: -8px; 
+}
 
+#foot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 47px;
+  list-style-type: none;
+  padding: 0 20px;
+  background: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+}
 
+#f3 {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+padding-top: 5px;
+}
 
+#f3 li {
+  display: block;
+  white-space: nowrap;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#f3 li a {
+color: #70757a;
+}
 
+#l3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 5px; 
+}
 
+#l3 li {
+  display: block;
+  white-space: nowrap;
+  padding-left: 5px;
+  padding-right: 5px;
+}
 
+#l3 li a {
+  color: #70757a;
+}
 /*------BOTTOM NAVIGATION END----- */

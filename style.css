@@ -9,7 +9,7 @@ body {
   margin-bottom: 0px;
 }
 
-.content {
+#form {
   flex: 1 0 auto;
 }
 footer {
@@ -41,41 +41,36 @@ li a:hover {
   text-decoration: underline;
 }
 
+/*------FOR SMALL SCREENS----- */
 @media only screen and (max-width: 600px) {
-  html, body{
+  html{
     height: 100vh;
   }
 
-  #foo {
+  footer {
     height: 100px;
-    margin-left: -3px;
-    margin-right: -3px;
+    width: 95vw;
+    margin-left: -10px;
+    margin-right: -10px;
   }
   
   #bottom #foot {
     display: flex;
     justify-content: space-evenly;
     height: 100px;
-    margin-left: -3px;
-    margin-right: -3px;
+    margin-left: -10px;
+    margin-right: -10px;
   }
 
-  #f3 {
+  #f3, #l3 {
     display: flex;
     justify-content: space-evenly;
     
   }
-
-  #l3 {
-    display: flex;
-    justify-content: space-evenly;
-    
-  }
-
-} 
+}
+/*------FOR SMALL SCREENS END----- */ 
 
 /*------TOP NAVIGATION START----- */
-
 #top {
   display: flex;
   flex-wrap: wrap;
@@ -160,6 +155,40 @@ li a:hover {
 
 /*------TOP NAVIGATION END----- */
 
+/*------GOOGLE LOGO START----- */
+#google {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+#google img {
+  display: flex;
+  align-self: center;
+}
+
+/*------GOOGLE LOGO END----- */
+
+/*-----FORM START----- */
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 160px;
+}
+
+#search {
+  width: auto;
+  max-width: 584px;
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+}
+
+/*-----FORM START----- */
 
 /*------BOTTOM NAVIGATION START----- */
 footer {
@@ -179,38 +208,21 @@ footer {
   border-top: 1px solid #e4e4e4;
 }
 
-#f3 {
+#f3, #l3 {
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
 padding-top: 5px;
 }
 
-#f3 li {
+#f3 li, #l3 li {
   display: block;
   white-space: nowrap;
   padding-left: 5px;
   padding-right: 5px;
 }
-#f3 li a {
+#f3 li a, #l3 li a {
 color: #70757a;
 }
 
-#l3 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding-top: 5px; 
-}
-
-#l3 li {
-  display: block;
-  white-space: nowrap;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#l3 li a {
-  color: #70757a;
-}
 /*------BOTTOM NAVIGATION END----- */

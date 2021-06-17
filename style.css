@@ -221,6 +221,11 @@ li a:hover {
   margin: 0 auto;
 }
 
+#search:hover {
+  border-color: rgba(223,225,229,0);
+  box-shadow: 0 1px 6px rgba(32,33,36,.28)
+}
+
 #name {
   display: flex;
   flex: 1;

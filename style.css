@@ -73,6 +73,15 @@ li a:hover {
     justify-content: space-evenly;
     
   }
+
+  #name div{
+    display: flex;
+    color: transparent;
+    flex: 100%;
+    white-space: pre;
+    height: 34px;
+    margin-right: 20px;
+  }
 }
 /*------FOR SMALL SCREENS END----- */ 
 
@@ -219,10 +228,12 @@ li a:hover {
 }
 
 #name div {
+  display: flex;
   color: transparent;
   flex: 100%;
   white-space: pre;
   height: 34px;
+  margin-right: 20px;
 }
 
 #name div input {
@@ -233,7 +244,7 @@ li a:hover {
   outline: none;
   display: flex;
   flex: 100%;
-  margin-top: -33px;
+  margin-top: 5px;
   margin-left: 10px;
   height: 34px;
   font-size: 16px;

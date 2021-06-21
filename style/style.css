@@ -1,4 +1,9 @@
 /* css for Google Homepage */
+:root {
+  --black: #222222;
+  --buttons: #f8f9fa;
+}
+
 html, body {
   height: 98.5%;
 }
@@ -12,7 +17,7 @@ body {
 input, button {
   font-size: 14px;
   font-family: arial,sans-serif;
-  color: #222;
+  color: var(--black);
 }
 
 #form {
@@ -34,7 +39,7 @@ li {
 
 li a {
   display: block;
-  color: #222;
+  color: var(--black);
   text-align: center;
   font-size: 14px;
   font-family: Arial, sans-serif;
@@ -174,12 +179,15 @@ li a:hover {
 #google {
   display: flex;
   flex-direction: column;
-  align-items: center;  
+  align-items: center; 
+  margin-top: 4%; 
 }
 
 #google img {
   display: flex;
   align-self: center;
+  height: 92px;
+  width: 272px;
 }
 
 /*------GOOGLE LOGO END----- */
@@ -268,11 +276,10 @@ li a:hover {
 }
 
 #buttons div input {
-  background-color: #f8f9fa;
-  border: 1px solid #f8f9fa;
+  background-color: var(--buttons);
+  border: 1px solid var(--buttons);
   border-radius: 4px;
   color: #3c4043;
-  font-family: arial,sans-serif;
   font-size: 14px;
   margin: 11px 4px;
   padding: 0 16px;
@@ -284,11 +291,10 @@ li a:hover {
 
 #buttons div input:hover {
   box-shadow: 0 1px 1px rgba(0,0,0,.1);
-  background-color: #f8f9fa;
   border: 1px solid #dadce0;
   color: #202124;
 }
-/*-----FORM START----- */
+/*-----FORM END----- */
 
 /*------BOTTOM NAVIGATION START----- */
 footer {

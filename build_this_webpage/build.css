@@ -15,7 +15,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-bottom: 0px;
-  margin-top: 20px;
+  margin-top: 35px;
 }
 
 ul {
@@ -45,23 +45,58 @@ li a:hover {
 }
 
 /* ----- HEADER ----- */
-#google-icon a img {
+#head {
+  display: flex;
+}
+
+#google-icon {
+  display: flex;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#google-icon img {
   height: 30px;
   width: 92px;
 }
 
-/*-----FORM START----- */
+#bar {
+  background: #fff;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+  height: 39px;
+  width: 690px;
+  border-radius: 24px;
+  z-index: 3;
+  height: 44px;
+  margin: 0 auto;
+  display: flex;
+}
+
+#bar:hover {
+  background-color: #fff;
+  box-shadow: 0 2px 8px 1px rgb(64 60 67 / 24%);
+  border-color: rgba(223,225,229,0);
+}
+
+
+
+/*-----FORM START----- 
 #bar {
   width: auto;
   display: flex;
 }
 
-#bar a {
+#bar div, #bar div div {
   display: flex;
 }
 
 form {
   min-width: 805px;
+}
+
+#magni-left {
+  
 }
 
 #magnify {
@@ -177,3 +212,4 @@ form {
   height: 43px;
   width: 43px;
 } 
+*/

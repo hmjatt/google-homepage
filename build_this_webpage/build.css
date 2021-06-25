@@ -17,7 +17,7 @@ body {
   margin-bottom: 0px;
 }
 
-ul {
+/* ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -41,7 +41,7 @@ li a {
 
 li a:hover {
   text-decoration: underline;
-}
+} */
 
 /* ----- HEADER ----- */
 header {
@@ -99,6 +99,7 @@ input {
   margin-left: 20px;
   height: 34px;
   font-size: 16px;
+  min-width: 500px;
 }
 
 
@@ -131,6 +132,7 @@ input {
   fill: currentColor;
   position: relative;
   margin-right: 15px;
+  margin-left: 10px;
 }
 
 #clear, #mic, #divider, #glass-blue {
@@ -170,11 +172,61 @@ input {
   border-radius: 50%;
 }
 
+  /* ----- NAVIGATION ----- */
 
 
+a {
+  text-decoration: none;
+}
 
+#navigation{
+  display: flex;
+  padding: 28px;
+}
 
+#left-6 {
+  display: flex;
+  flex-grow: 3;
+  margin-left: 130px;
+}
 
+#right-7 {
+  display: flex;
+  flex-grow: 2;
+  padding-left: 50px;
+}
+
+#left-6 div {
+  display: flex;
+  margin-left: 20px;
+}
+
+#left-6 #all span svg {
+  display: block;
+  height: 16px;
+  padding-right: 5px;
+}
+
+#left-6 div span svg {
+  display: block;
+  height: 16px;
+  padding-right: 5px;
+  color: #5f6368;
+  fill: currentColor;
+}
+
+#more span svg {
+  margin-right: -5px;
+}
+
+#left-6 div a, #right-7 div a {
+  color: #5f6368;
+  font-size: 16px;
+  font-family: Open Sans, arial, sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  /* border-bottom: 1px solid #ebebeb; */
+}
 
 
 

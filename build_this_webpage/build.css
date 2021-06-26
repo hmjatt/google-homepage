@@ -4,6 +4,8 @@
   --site-content: color: #4d5156;
   --blue: color: #1a0dab;
   --blue-visited: color : #660099;
+  --roboto: Roboto, sans-serif;
+  --rubik: Rubik, sans-serif;
 }
 
 html,
@@ -238,7 +240,7 @@ a {
 #left-6 div a, #right-7 div a {
   color: #5f6368;
   font-size: 14px;
-  font-family: Roboto, sans-serif, arial;
+  font-family: var(--roboto);
   display: flex;
   justify-content: space-evenly;
 }
@@ -246,6 +248,16 @@ a {
 #nav-border {
   border-bottom: 1px solid #ebebeb;
   margin-top: -28px;
+  display: flex;
+}
+
+#results {
+  font-family: var(--roboto);
+  display: flex;
+  margin-left: 198px;
+  margin-top: 15px;
+  color: #70757a;
+  font-size: 14px;
 }
 
 

@@ -19,31 +19,23 @@ body {
   margin-bottom: 0px;
 }
 
-/* ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
+
+
 
 li {
-  float: left;
+  list-style: none;
 }
 
-li a {
-  display: block;
-  color: var(--black);
-  text-align: center;
-  font-size: 14px;
-  font-family: Arial, sans-serif;
-  padding: 5px 5px 5px 5px;
-  margin: 5px 5px 5px 5px;
-  text-decoration: none;
+.sticky {
+  display: flex;
+  position: fixed;
+  width: 98.7%;
 }
 
-li a:hover {
-  text-decoration: underline;
-} */
+.padding {
+  margin-top: 77px;
+}
+
 
 /* ----- HEADER ----- */
 header {
@@ -251,151 +243,47 @@ a {
   display: flex;
 }
 
-#results {
+#speed {
   font-family: var(--roboto);
   display: flex;
   margin-left: 198px;
   margin-top: 15px;
   color: #70757a;
-  font-size: 14px;
 }
 
+#results {
+  display: flex;
+  flex-direction: column;
+  padding-left: 200px;
+  width: 57%;
+}
 
-
-
-
-
-
-
-/*-----FORM START----- 
-#bar {
-  width: auto;
+#ads {
   display: flex;
 }
 
-#bar div, #bar div div {
+#ad1 {
   display: flex;
+  padding-left: 20px;
 }
 
-form {
-  min-width: 805px;
-}
-
-#magni-left {
-  
-}
-
-#magnify {
-  margin: auto;
-  padding-left: 15px;
-}
-
-#divider {
-  border-left: 1px solid #dfe1e5;
-  height: 65%;
-}
-
-#glass-blue {
-  margin-top: 3px;
-  height: 20px;
-  width: 20px;
-  display: inline-block;
-  color: #4285f4;
-  fill: currentColor;
-  position: relative;
-}
-
-#search {
-  width: auto;
-  max-width: 584px;
-  background: #fff;
+#ad1 div {
   display: flex;
-  border: 1px solid #dfe1e5;
-  box-shadow: none;
-  border-radius: 24px;
-  height: 44px;
-  margin: 0 auto;
-}
-
-#search:hover {
-  border-color: rgba(223, 225, 229, 0);
-  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
-}
-
-#name {
-  display: flex;
-  flex: 1;
   flex-wrap: wrap;
+  padding-right: 70px;
 }
 
-#name div {
+#ad1 div p {
+  margin-top: -15px;
+}
+
+#list {
   display: flex;
-  color: transparent;
-  flex: 100%;
-  white-space: pre;
-  height: 34px;
-  margin-right: 20px;
+  flex-direction: column;
 }
 
-#name div input {
-  background-color: transparent;
-  border: none;
-  color: rgba(0, 0, 0, 0.87);
-  word-wrap: break-word;
-  outline: none;
-  display: flex;
-  flex: 100%;
-  margin-top: 5px;
-  margin-left: 10px;
-  height: 34px;
-  font-size: 16px;
-}
 
-#settings a span svg {
-  display: block;
-  height: 100%;
-  width: 25px;
-}
 
-#settings a:hover {
-  background-color: rgba(218,220,224,.5);
-  border-radius:  50%;
-  width: 25px;
-}
 
-#apps a span svg {
-  display: block;
-  height: 100%;
-  width: 25px;
-}
 
-#apps a:hover {
-  background-color: rgba(218,220,224,.5);
-  border-radius:  50%;
-  width: 25px;
-}
 
-#github-logo {
-  height: 37px;
-  width: 37px;
-  border-radius: 999px;
-  margin-left: -7px;
-  margin-top: -2px;
-}
-#sign {
-  margin-top: -7px;
-  height:45px;
-  width: 45px;
-}
-
-#git {
-  height: 45px;
-  width: 45px;
-}
-#git:hover {
-  background-color: #aaaaaa34;
-  border-radius: 999px;
-  height: 43px;
-  width: 43px;
-} 
-*/

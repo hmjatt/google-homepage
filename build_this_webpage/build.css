@@ -6,7 +6,6 @@
   --blue: #1a0dab;
   --blue-visited: #660099;
   --roboto: Roboto, sans-serif;
-  --rubik: Rubik, sans-serif;
 }
 
 html,
@@ -309,8 +308,8 @@ p{
 }
 
 #list {
-  display: flex;
   flex-direction: column;
+  display: flex;
 }
 
 ul li {
@@ -330,3 +329,66 @@ ul li {
   margin-left: 5px;
 }
 
+ /* ----- RELATED SEARCHES ----- */
+
+#related {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 200px;
+  width: 50%;
+}
+
+#related h3 {
+  display: flex;
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 28px;
+  color: var(--site);
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 10px;
+}
+
+h4 {
+  display: flex;
+  justify-content: space-between;
+  font-weight: normal;
+  margin-top: -5px;
+}
+
+h4 span {
+  display: flex;    
+}
+
+h4 span svg {
+  display: block;
+  line-height: 20px;
+  color: #70757a;
+  fill: currentColor;
+  line-height: 24px;
+  width: 24px;
+ }
+
+#related-cards{
+  display: flex;
+}
+
+#related-cards li {
+  display: flex;
+}
+
+#related-cards li ul {
+  padding-left: 10px;
+  font-size: 14px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+#webflow {
+  margin-top: 3s5px;
+  margin-bottom: 40px;
+}
+
+#see-more {
+  color: #1a0dab;
+}

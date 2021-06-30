@@ -5,6 +5,7 @@
   --site-content:#4d5156;
   --blue: #1a0dab;
   --blue-visited: #660099;
+  --border-bottom: 2px solid #ebebeb;
   --roboto: Roboto, sans-serif;
 }
 
@@ -235,7 +236,7 @@ input {
 }
 
 #nav-border {
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: var(--border-bottom);
   margin-top: -28px;
   display: flex;
 }
@@ -345,7 +346,7 @@ ul li {
   font-weight: normal;
   line-height: 28px;
   color: var(--site);
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: var(--border-bottom);
   padding-bottom: 10px;
 }
 
@@ -385,10 +386,74 @@ h4 span svg {
 }
 
 #webflow {
-  margin-top: 3s5px;
+  margin-top: 35px;
   margin-bottom: 40px;
+}
+
+#see {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50vw;
+  margin-top: 10px;
 }
 
 #see-more {
   color: #1a0dab;
+  border: 1px solid #dadce0;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  line-height: 20px;
+  position: relative;
+  width: 300px;
+  padding: 7px 11px;
+  height: 36px;
+  border-radius: 18px;
+  background: #ffffff;
+}
+
+#see-more:hover {
+  background: #f3f3f3;
+}
+
+#see-more span svg {
+  display: block;
+  line-height: 20px;
+  fill: currentColor;
+  width: 20px;
+}
+
+#see-more h5{
+  margin-top: 0px;
+  display: flex;
+  margin-left: 90px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+}
+
+#feed {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-self: flex-start;
+  align-items: flex-start;
+  width: 50vw;
+  padding-top: 40px;
+}
+
+#hline {
+  border-bottom: var(--border-bottom);
+  width: 45vw;
+  display: flex;
+}
+
+#feedback {
+  display: flex;
+  align-self: flex-end;
+  font-size: 12px;
+  color: var(--site-content);
+  margin-top: -8px;
 }

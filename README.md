@@ -4,3 +4,4 @@ Rebuilding Google Homepage
  - HTML
  - CSS
  - GIT BASICS
+ - JAVASCRIPT

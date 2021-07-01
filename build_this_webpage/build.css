@@ -311,6 +311,7 @@ p{
 #list {
   flex-direction: column;
   display: flex;
+  flex-wrap: wrap;
 }
 
 ul li {
@@ -364,7 +365,7 @@ h4 span {
 h4 span svg {
   display: block;
   line-height: 20px;
-  color: #70757a;
+  color: var(--link-light);
   fill: currentColor;
   line-height: 24px;
   width: 24px;
@@ -490,6 +491,10 @@ h4 span svg {
   cursor: pointer;
 }
 
+.ul strong {
+  font-weight: 700;
+}
+
 .grey-magnify {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='rgba(0,0,0,.54)' d='M20.49 19l-5.73-5.73C15.53 12.2 16 10.91 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.41 0 2.7-.47 3.77-1.24L19 20.49 20.49 19zM5 9.5C5 7.01 7.01 5 9.5 5S14 7.01 14 9.5 11.99 14 9.5 14 5 11.99 5 9.5z'/%3E%3C/svg%3E");
   background-position: center;
@@ -541,3 +546,40 @@ table {
   width: 83px;
   text-align: start;
 }
+
+  /* ----- FOOTER ----- */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  margin: 0px -8px;
+}
+
+#foot, #country{
+  display: flex;
+  list-style-type: none;
+  background: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  height: 50px;
+}
+
+#country, #country a {
+  display: flex;
+  padding: 0 85px;
+  margin-top: 20px;
+}
+
+
+#foot ul {
+  display: flex;
+  padding-left: 170px;
+  margin-top: 0px;
+}
+
+#country a, #foot ul li a {
+  padding-right: 20px;
+  color: var(--link-light);
+  font-size: 14px;
+  font-weight: lighter;
+}
+

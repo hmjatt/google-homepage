@@ -5,7 +5,7 @@
   --site-content:#4d5156;
   --blue: #1a0dab;
   --blue-visited: #660099;
-  --border-bottom: 2px solid #ebebeb;
+  --border-bottom: 1px solid #ebebeb;
   --roboto: Roboto, sans-serif;
 }
 
@@ -32,7 +32,7 @@ li {
 }
 
 .padding {
-  margin: 77px 0px 10px 0px;
+  margin-top: 77px;
   padding-top: 100px;
   background-color: white;  
 }
@@ -66,7 +66,7 @@ header {
   box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
   height: 39px;
   border-radius: 24px;
-  z-index: 3;
+  z-index: 10;
   height: 44px;
   margin-left: 50px;
   display: flex;
@@ -406,7 +406,6 @@ h4 span svg {
   display: flex;
   font-size: 14px;
   line-height: 20px;
-  position: relative;
   width: 300px;
   padding: 7px 11px;
   height: 36px;
@@ -456,4 +455,64 @@ h4 span svg {
   font-size: 12px;
   color: var(--site-content);
   margin-top: -8px;
+}
+
+  /* ----- 8 BUTTONS(RECOMMENDATIONS) ----- */
+
+#eight-buttons {
+  display: flex;
+  width: 45vw;
+  margin-top: 20px;
+}
+
+#left-4b, #right-4b {
+  display: flex;
+  justify-items: center;
+}
+
+#left-4b li, #right-4b li {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#left-4b li ul, #right-4b li ul {
+  align-items: center;
+  background-color: #f1f3f4;
+  border-radius: 100px;
+  box-sizing: border-box;
+  display: flex;
+  margin: 5px 8px;
+  max-height: none;
+  min-height: 48px;
+  min-width: 300px;
+  max-width: 300px;
+  padding: 0 17px;
+  cursor: pointer;
+}
+
+.grey-magnify {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='rgba(0,0,0,.54)' d='M20.49 19l-5.73-5.73C15.53 12.2 16 10.91 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.41 0 2.7-.47 3.77-1.24L19 20.49 20.49 19zM5 9.5C5 7.01 7.01 5 9.5 5S14 7.01 14 9.5 11.99 14 9.5 14 5 11.99 5 9.5z'/%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  border-radius: 4px;
+  height: 20px;
+  width: 20px;
+  margin: 0px 20px 0px 10px;
+}
+
+.ul:hover {
+  text-decoration: underline;
+}
+
+/* ----- pages ----- */
+#pages {
+  width: 45vw;
+  display: flex;
+  padding-left: 210px;
+}
+
+table {
+  margin: 30px auto;
+  text-align: center;
 }

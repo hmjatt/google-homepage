@@ -516,3 +516,28 @@ table {
   margin: 30px auto;
   text-align: center;
 }
+
+
+#page-nums td {
+  font-size: 14px;
+  color: #4285f4;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+#page-nums td:hover {
+  text-decoration: underline;
+}
+
+#next {
+  text-align: right;
+}
+
+#pages-img  td {
+  padding: 0px;
+}
+
+#gle {
+  width: 83px;
+  text-align: start;
+}

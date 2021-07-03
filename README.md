@@ -1,5 +1,7 @@
 # Rebuilding Google Homepage and search results page
 
+[Live Demo](https://hmjatt.github.io/google-homepage/)
+
 ## Skills Earned ---
  - HTML
  - CSS

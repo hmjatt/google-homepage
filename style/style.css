@@ -13,12 +13,12 @@ body {
   flex-direction: column;
   margin-bottom: 0px;
 }
-
+/* 
 input, button {
   font-size: 14px;
   font-family: arial,sans-serif;
   color: var(--black);
-}
+} */
 
 #form {
   flex: 1 0 auto;
@@ -270,12 +270,12 @@ li a:hover {
   margin-top: 30px;
 
 }
-#buttons div {
+#buttons form {
   display: flex;
   justify-content: center;
 }
 
-#buttons div input {
+#buttons form input {
   background-color: var(--buttons);
   border: 1px solid var(--buttons);
   border-radius: 4px;
@@ -289,7 +289,7 @@ li a:hover {
   text-align: center;
 }
 
-#buttons div input:hover {
+#buttons form input:hover {
   box-shadow: 0 1px 1px rgba(0,0,0,.1);
   border: 1px solid #dadce0;
   color: #202124;
